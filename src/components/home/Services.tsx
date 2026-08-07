@@ -51,13 +51,13 @@ export function Services() {
               key={service.title}
               className="group rounded-3xl border border-slate-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:border-[#176b3a]/30 hover:shadow-xl sm:p-8"
             >
-              <div className="flex justify-end">
-                <span className="h-2.5 w-2.5 rounded-full bg-[#176b3a] transition group-hover:scale-150" />
-              </div>
+              <div className="flex items-center justify-between gap-5">
+                <h3 className="text-2xl font-bold text-slate-900">
+                  {service.title}
+                </h3>
 
-              <h3 className="mt-6 text-2xl font-bold text-slate-900">
-                {service.title}
-              </h3>
+                <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-[#176b3a] transition group-hover:scale-150" />
+              </div>
 
               <p className="mt-4 leading-7 text-slate-600">
                 {service.description}
